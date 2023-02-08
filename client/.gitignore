@@ -21,3 +21,407 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+
+# $lightGreen: #b9e7e7;
+
+# .app {
+#   display: flex;
+#   justify-content: center;
+#   .container {
+#     width: 1024px;
+
+#     .link {
+#       text-decoration: none;
+#       color: inherit;
+#     }
+
+#     // LOGN AND REGISTER
+#     .auth {
+#       display: flex;
+#       flex-direction: column;
+#       align-items: center;
+#       justify-content: center;
+#       background-color: $lightGreen;
+#       height: 100vh;
+
+#       h1 {
+#         font-size: 20px;
+#         color: teal;
+#         margin-bottom: 20px;
+#       }
+
+#       form {
+#         display: flex;
+#         flex-direction: column;
+#         padding: 50px;
+#         background-color: #fff;
+#         width: 200px;
+#         gap: 20px;
+
+#         input {
+#           padding: 10px;
+#           border: none;
+#           border-left: 3px solid rgb(13, 139, 135);
+#         }
+
+#         button {
+#           padding: 10px;
+#           border: none;
+#           background-color: teal;
+#           color: white;
+#           font-weight: bold;
+#           font-size: 14px;
+#           cursor: pointer;
+#         }
+
+#         span {
+#           font-size: 12px;
+#           text-align: center;
+#         }
+
+#         p {
+#           font-size: 12px;
+#           color: red;
+#           text-align: center;
+#         }
+#       }
+#     }
+
+#     // NAVBAR
+
+#     .navbar {
+#       display: flex;
+#       justify-content: center;
+
+#       .container {
+#         padding: 10px 0px;
+#         display: flex;
+#         align-items: center;
+#         justify-content: space-between;
+
+#         .logo {
+#           img {
+#             width: 150px;
+#             height: 40px;
+#           }
+#         }
+
+#         .links {
+#           display: flex;
+#           align-items: center;
+#           gap: 10px;
+
+#           h6 {
+#             font-size: 16px;
+#             font-weight: 300;
+#           }
+
+#           span {
+#             cursor: pointer;
+#           }
+
+#           .write {
+#             display: flex;
+#             align-items: center;
+#             justify-content: center;
+#             background-color: $lightGreen;
+#             width: 50px;
+#             height: 50px;
+#             border-radius: 50%;
+#             border: 1px solid white;
+#             font-weight: 300;
+#             &:hover {
+#               color: teal;
+#               font-weight: bold;
+#               background-color: white;
+#               border: 1px solid teal;
+#             }
+#           }
+#         }
+#       }
+#     }
+
+#     // FOOTER
+#     footer {
+#       margin-top: 100px;
+#       padding: 20px;
+#       background-color: $lightGreen;
+#       font-size: 12px;
+#       display: flex;
+#       align-items: center;
+#       justify-content: space-between;
+
+#       img {
+#         width: 150px;
+#         height: 40px;
+#       }
+#     }
+
+#     // HOMEPAGE
+
+#     .home {
+#       .posts {
+#         margin-top: 50px;
+#         display: flex;
+#         flex-direction: column;
+#         gap: 150px;
+
+#         .post {
+#           display: flex;
+#           gap: 100px;
+
+#           &:nth-child(2n + 1) {
+#             flex-direction: row-reverse;
+#           }
+
+#           .img {
+#             flex: 2;
+#             position: relative;
+
+#             .aft {
+#               width: 100%;
+#               height: 100%;
+#               background-color: $lightGreen;
+#               position: absolute;
+#               top: 20px;
+#               left: -20px;
+#               z-index: -1;
+#             }
+
+#             img {
+#               width: 100%;
+#               height: 100%;
+#               object-fit: cover;
+#             }
+#           }
+#           .content {
+#             flex: 3;
+#             display: flex;
+#             gap: 20px;
+#             flex-direction: column;
+#             justify-content: space-between;
+
+#             h1 {
+#               font-size: 48px;
+#             }
+#             p {
+#               font-size: 18px;
+#             }
+
+#             button {
+#               width: max-content;
+#               padding: 10px;
+#               border: none;
+#               cursor: pointer;
+#               align-items: center;
+#               background-color: white;
+#               border: 1px solid $lightGreen;
+
+#               &:hover {
+#                 background-color: $lightGreen;
+#                 color: black;
+#               }
+#             }
+#           }
+#         }
+#       }
+#     }
+
+
+#     // Individual posts
+
+#     .single{
+
+#       display: flex;
+#       gap: 50px;
+
+#       .content{
+#         display: flex;
+#         flex-direction: column;
+#         gap: 30px;
+#         flex:5;
+
+#         img{
+#           width: 100%;
+#           height: 300px;
+#           border-radius: 5px;
+#           object-fit: cover;
+#         }
+
+#         .user{
+#           display: flex;
+#           align-items: center;
+#           gap: 10px;
+#           font-size: 14px;
+#           img{
+#             width: 50px;
+#             height: 50px;
+#             border-radius: 50%;
+#             object-fit: cover;
+#           }
+#           .info{
+#             span{
+#               font-weight: bold;
+#             }
+#           }
+
+#           .edit{
+
+#             display: flex;
+#             gap: 5px;
+
+#             .delete{
+#               cursor: pointer;
+#               height: 20px;
+#               width: 20px;
+#             }
+#           }
+#         }
+#         h1{
+#           font-size: 32px;
+#           color: #333;
+#         }
+#         p{
+#           text-align: justify;
+#           line-height: 30px;
+#         }
+#       }
+#       .menu{
+#         flex: 2;
+#         display: flex;
+#         flex-direction: column;
+#         gap:25px;
+
+#         h1{
+#           font-size: 24px;
+#           color: #555;
+#         }
+
+#         .post{
+#           display: flex;
+#           flex-direction: column;
+#           gap: 10px;
+
+#           img{
+#             width: 100%;
+#             height:200px;
+#             border-radius: 5px;
+#             object-fit: cover;
+
+#           }
+#           h2{
+#             color: #555;
+#           }
+#           button {
+#               width: max-content;
+#               padding: 10px;
+#               border: none;
+#               cursor: pointer;
+#               align-items: center;
+#               background-color: white;
+#               border: 1px solid $lightGreen;
+#               margin:auto;
+
+#               &:hover {
+                
+#                 background-color: $lightGreen;
+#                 color: black;
+#               }
+#             }
+#         }
+#       }
+#     }
+
+#     // WRITE section
+#     .add{
+#       display: flex;
+#       margin-top: 20px;
+#       gap: 20px;
+
+#       .content{
+#         flex: 5;
+#         display: flex;
+#         flex-direction: column;
+#         gap: 20px;
+
+#         input{
+#           padding: 10px;
+#           border: 1px solid lightgray;
+#           border-radius: 5px;
+#         }
+#         .editContainer{
+#           height: 300px;
+#           overflow: scroll;
+#           border: 1px solid lightgray;
+
+
+#           .editor{
+#             height:100%;
+#             border:none;
+#           }
+#         }
+
+#       }
+
+#       .menu{
+#         flex:2;
+#         display: flex;
+#         flex-direction: column;
+#         gap: 20px;
+
+#         .item{
+#           padding: 10px;
+#           border: 1px solid lightgray;
+#           flex: 1;
+#           display: flex;
+#           flex-direction: column;
+#           justify-content: space-between;
+#           font-size: 12px;
+#           color: #555;
+
+#           h1{
+#             font-size: 20px;
+
+#           }
+
+#           .file{
+#             text-decoration: underline;
+#             cursor: pointer;
+#           }
+
+#           .buttons{
+#             display: flex;
+#             justify-content: space-between;
+
+
+#             :first-child{
+#               cursor: pointer;
+#               padding: 3px 5px;
+#               color: teal;
+#               background-color: white;
+#               border: 1px solid teal;
+#             }
+#             :last-child{
+#               cursor: pointer;
+#               padding: 3px 5px;
+#               color: white;
+#               background-color: teal;
+#               border: 1px solid teal;
+
+#             }
+#           }
+#           .cat{
+#             display: flex;
+#             align-items: center;
+#             color: teal;
+#             gap: 10px;
+#           }
+#         }
+#       }
+#     }
+
+#   }
+# }
